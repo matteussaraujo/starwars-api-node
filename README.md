@@ -45,7 +45,7 @@ Retorna uma mensagem de teste.
 
 Exemplo de resposta:
 
-"Teste"
+"API funcionando 🚀"
 
 POST /
 
@@ -59,6 +59,43 @@ Body esperado (JSON):
 "image_url": "http://exemplo.com/imagem.jpg",
 "trailer_url": "http://exemplo.com/trailer.mp4"
 }
+
+Exemplo de resposta:
+
+{
+"\_id": "64f7d8e3f5a2b9c7e4a1d123",
+"title": "Star Wars",
+"description": "Uma saga épica",
+"image_url": "http://exemplo.com/imagem.jpg",
+"trailer_url": "http://exemplo.com/trailer.mp4",
+"\_\_v": 0
+}
+
+PUT /:id
+
+Atualiza os dados de um filme pelo ID.
+
+Body esperado (JSON):
+
+{
+"title": "Star Wars - Episódio IV",
+"description": "Saga épica atualizada",
+"image_url": "http://exemplo.com/nova_imagem.jpg",
+"trailer_url": "http://exemplo.com/novo_trailer.mp4"
+}
+
+{
+"\_id": "64f7d8e3f5a2b9c7e4a1d123",
+"title": "Star Wars - Episódio IV",
+"description": "Saga épica atualizada",
+"image_url": "http://exemplo.com/nova_imagem.jpg",
+"trailer_url": "http://exemplo.com/novo_trailer.mp4",
+"\_\_v": 0
+}
+
+DELETE /:id
+
+Remove um filme pelo ID.
 
 Exemplo de resposta:
 
